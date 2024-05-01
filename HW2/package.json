@@ -1,0 +1,15 @@
+{
+  "name": "generator-sec-password",
+  "version": "2.0.0",
+  "description": "Библиотека для генерации безопасных паролей",
+  "main": "securePasswordGenerator.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Erina Kseniia",
+  "license": "ISC",
+  "dependencies": {
+    "generator-sec-password": "^2.0.0"
+  }
+}
