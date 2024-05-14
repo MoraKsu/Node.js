@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Корневая страница</title>
+</head>
+<body>
+    <h1>Корневая страница</h1>
+    <p>Просмотров: <span id="viewCount"></span></p>
+    <a href="./about">Ссылка на страницу /about</a>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+          const viewCountElement = document.getElementById('viewCount');
+  
+          const fetchViewCount = () => {
+              fetch('/viewCount')
+                  .then(response => response.json())
+                  .then(data => {
+                      viewCountElement.textContent = data.count;
+                  })
+                  .catch(error => console.error('Error fetching view count:', error));
+          };
+  
+          fetchViewCount();
+      });
+    </script>
+</body>
+</html>
