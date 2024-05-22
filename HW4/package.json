@@ -1,0 +1,17 @@
+{
+  "name": "hw4",
+  "version": "1.0.0",
+  "description": "- GET /users - получение всех пользователей\r - GET /users/:id - получение одного пользователя\r - POST /users - создает пользователя (плюс id)\r - PUT /users/:id - обнавляет одного пользователя\r - DELETE /users/:id - удаляет одного пользователя",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "joi": "^17.13.1",
+    "nodemon": "^3.1.0"
+  }
+}
